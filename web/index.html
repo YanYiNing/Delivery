@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/qrcode.js"></script>
+    <script src="js/main.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="navbar w-100 p-3" ></div>
+		<div id="recieve" class="container text-center ">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">收件人</span>
+        </div>
+        <input id="name" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">城市</label>
+        </div>
+        <select id="city" class="custom-select" id="city">
+          <option selected>Choose...</option>
+          <option value="重庆">重庆</option>
+          <option value="福州">福州</option>
+          <option value="北京">北京</option>
+        </select>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">地址</span>
+        </div>
+        <input id="address" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3">电话</span>
+        </div>
+        <input id="phone" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="makeCode()">生成二维码</button>
+
+      <div id="qrcode" class="container"></div>
+
+    </div>
+    <script type="text/javascript">
+      //makeCode('发货地址：广东省广州市黄埔区 云埔工业区埔南路47号凌进物流中外运仓3号库 510760 蓝月亮 020-82102563 收货地址：重庆重庆市南岸区');
+    </script>
+  </body>
+</html>

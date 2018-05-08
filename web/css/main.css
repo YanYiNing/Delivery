@@ -1,0 +1,9 @@
+#qrcode {
+  width: 256 !important;
+  height: 256 !important;
+  margin-top: 20px;
+}
+
+#recieve {
+  max-width: 500px;
+}
